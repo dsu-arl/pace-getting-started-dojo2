@@ -1,0 +1,4 @@
+name: StartHere
+challenges:
+  - id: vscode
+    name: vscode
