@@ -1,4 +1,5 @@
 name: StartHere
 challenges:
   - id: vscode
-    name: vscode
+    name: Using the VSCode Workspace
+    allow_privileged: false

@@ -1,9 +1,7 @@
-id: example
-name: Getting Started Dojo
-type: example
+id: welcome
+name: Getting Started
+type: welcome
 award:
   emoji: 😀
 modules:
-  - id: hello
-  - id: world
   - id: StartHere
