@@ -4,4 +4,4 @@ type: welcome
 award:
   emoji: 😀
 modules:
-  - id: StartHere
+  - id: starthere
