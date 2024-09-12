@@ -3,6 +3,6 @@ challenges:
   - id: vscode
     name: Using the VSCode Workspace
     allow_privileged: false
-  - id: vscode
+  - id: challenge
     name: Running Challenges
     allow_privileged: false
