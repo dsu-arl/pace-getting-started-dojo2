@@ -6,3 +6,6 @@ challenges:
   - id: challenge
     name: Running Challenges
     allow_privileged: false
+  - id: file
+    name: Make a File
+    allow_privileged: false

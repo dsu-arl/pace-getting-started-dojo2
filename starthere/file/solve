@@ -1,0 +1,37 @@
+#!/opt/pwn.college/bash
+
+# ASCII art example from https://ascii.co.uk/art/checkmark
+cat <<"END"
+  _____                      _    
+ |  __ \                    | |   
+ | |__) |___ _ __   ___  _ __| |_  
+ |  _  // _ \ '_ \ / _ \| '__| __| 
+ | | \ \  __/ | | | (_) | |  | |_  
+ |_|  \_\___|_| |_|\___/|_|   \__| 
+END
+
+# Check if "myfile.txt" exists in the home directory
+if [ ! -f ~/myfile.txt ]
+then
+    cat <<END
+File "myfile.txt" does not exist in your home directory.
+Please create a file named "myfile.txt" in your home directory and rerun this script.
+END
+    exit
+fi
+
+# Check if "myfile.txt" is not empty
+if [ ! -s ~/myfile.txt ]
+then
+    cat <<END
+File "myfile.txt" exists but is empty.
+Please ensure that the file contains some data and rerun the script.
+END
+    exit
+fi
+
+cat <<END
+Great! The file "myfile.txt" exists in your home directory and is not empty.
+You're all set for the next challenge!
+END
+
