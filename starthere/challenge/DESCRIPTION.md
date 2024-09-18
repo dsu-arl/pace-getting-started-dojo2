@@ -5,5 +5,5 @@ You will need to run the `/challenge/solve` file to get the flag.
 To run this file:
 1. start the VSCode Workspace
 2. open a terminal
-3. type `/challenge/run` in the terminal and press `Enter`
+3. type `/challenge/solve` in the terminal and press `Enter`
 4. copy/paste the flag to submit! 
