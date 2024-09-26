@@ -10,5 +10,5 @@ A few helpful definitions to get you started:
 - `VSCode` - Visual Studio Code is a program that is useful for writing and editing code. Just like Word allows you to edit a document (text file), VSCode allows you to edit code (program file). 
 - `Code` - a set of steps/instructions for the computer to perform, that ultimately completes a task. 
 - `Programming language` - all code is written in a specific programming language. Programming languages allow you (the programmer) to communicate directly with the computer. The programs you write can perform many different tasks, such as calculations, data processing, games, etc.
-- `Linux` - an operating system. This is how the computer works. You may have experience with a Windows or Mac computer. Linux is very similar to both Windows and Mac, but has a few different features.
+- `Linux` - an operating system. This is how the computer works. You may have experience with a Windows or Mac computer. Linux is very similar to both Windows and Mac, but has a few different features. The terminal you use in VSCode is a Linux terminal. 
 

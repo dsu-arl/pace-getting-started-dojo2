@@ -1,4 +1,4 @@
-## Challenge Description
+### Challenge Description
 This challenge will teach you to use the Visual Studio Code workspace, which is where you will work on challenges.
 You can start this challenge using the Start button below.
 Wait for confirmation that it started, and then click on the Workspace tab in the navigation bar (or, if you are quick enough, the Workspace link in the brief popup)!
@@ -10,7 +10,7 @@ Flags are cryptographic tokens that are given to you when you solve challenges.
 Once you see it, copy-paste it into the submission box below and submit! To copy/paste, highlight the flag "pwn.college{...}", then use CTRL+C to copy and CTRL+V to paste.
 Then, once you get the confirmation that the flag was correct, move on to the next challenge!
 
-## Challenge Steps
+### Challenge Steps
 1. Start the challenge
 2. Open VSCode Workspace
 3. Open a terminal
