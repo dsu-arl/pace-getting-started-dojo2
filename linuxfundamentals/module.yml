@@ -1,0 +1,11 @@
+name: Linux Fundamentals
+challenges:
+  - id: directories
+    name: Move through the Linux filesystem
+    allow_privileged: false
+  - id: filecreation
+    name: Create and delete files
+    allow_privileged: false
+  - id: movingfiles
+    name: Move, copy, and rename files.
+    allow_privileged: false
