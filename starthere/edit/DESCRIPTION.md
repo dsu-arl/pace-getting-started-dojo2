@@ -9,7 +9,7 @@ Note: If you are asked "Do you trust the authors of the files in this folder?", 
 In your home directory, you should see your myfile.txt that you made in the previous challenge.
 You will also see some system files (`.bashrc`, `.profile`, etc.) - these files are needed for the VSCode Workspace to run properly. Don't edit them!
 
-When you see a file you want to re-open, click on that file name to open it in VSCode.
+When you see a file you want to re-open, click on that file name to open it in VSCode. After editing a file, `CTRL+S` will save your changes.
 
 In this challenge, your task is to re-open `myfile.txt` and edit the contents of the file so it contains the phrase "Hello World!".
 
