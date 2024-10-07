@@ -1,7 +1,7 @@
 ## Challenge Description
 This challenge will teach you to use the Visual Studio Code workspace, which is where you will work on challenges.
 You can start this challenge using the Start button below.
-Wait for confirmation that it started, and then click on the Workspace tab in the navigation bar (or, if you are quick enough, the Workspace link in the brief popup)!
+Wait for confirmation that it started, and then click on the "Workspace" tab in the navigation bar at the top of the screen (or, if you are quick enough, the Workspace link in the brief popup)!
 Once VSCode loads, launch a terminal (press `Control-Shift-Backtick` or click the `☰` button in the top left corner, select the Terminal menu, and click New Terminal) and run the challenge!
 Note that you can drag the top of the terminal up and down to give more space as needed. 
 

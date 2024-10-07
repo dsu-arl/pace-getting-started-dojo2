@@ -9,7 +9,7 @@ Some other types of files:
 - `.c` files hold C code
 - `.py` files hold python code
 
-To make your own text file in VSCode, click the `☰` button in the top left corner -> File -> New Text File. This will make a new text file that does not have any data stored in it. 
+To make your own text file in VSCode, click the Menu `☰` button in the top left corner -> File -> New Text File. This will make a new text file that does not have any data stored in it. 
 Then start typing! Try typing your name, "hello world!", or whatever you want.
 
 Once you have some text in your file, you will need to save it. Press `CTRL+S` to save your file. 
