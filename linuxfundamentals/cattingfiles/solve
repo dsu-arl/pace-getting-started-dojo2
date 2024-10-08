@@ -19,11 +19,11 @@ def setup_game():
         "scuff", "twinge", "spurt", "chime", "bliss", "frisk", "twist", "smirk", "shard", "clamp"
     ]
 
-    passphrase = f"{random.choice(random_words)}_{random.choice(random_words)}_{random.choice(random_words)}"
+    passphrase = f"{random.choice(random_words)}_{random.choice(random_words)}_{random.choice(random_words)}\n"
 
     # Write file
     with open('/tmp/super_secret_password', 'w') as fObj:
-        fObj.write(passphrase + "\n")
+        fObj.write(passphrase)
 
     # Give file proper perms 
     chmod('/tmp/super_secret_password', stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
