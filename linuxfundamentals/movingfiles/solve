@@ -142,7 +142,6 @@ def check_three() -> bool:
         print("Congratulations! You did it!")
         return True
     
-    print("OOPS! It looks like you didn't pass!")
     return False
 
 if __name__ == "__main__":
