@@ -1,5 +1,6 @@
 #!/opt/pwn.college/python
-from os import makedirs, listdir
+import stat
+from os import makedirs, listdir, chmod
 from os.path import exists, join
 
 def main():
