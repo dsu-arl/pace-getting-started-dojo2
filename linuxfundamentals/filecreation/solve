@@ -38,7 +38,7 @@ def main():
         with open(join(chall2_dir, 'ipsum.txt'), 'w') as fObj:
             fObj.write("Delete me!")
         
-        chmod(join(chall2_dir, 'ipsump.txt'), stat.S_IRWXU | stat.S_IRWXG)
+        chmod(join(chall2_dir, 'ipsum.txt'), stat.S_IRWXU | stat.S_IRWXG)
 
     if not check_two(chall2_dir):
         print("""
