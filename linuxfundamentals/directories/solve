@@ -23,7 +23,7 @@ def setup_game():
 
     # Create random winning dir
     winning_dir = "/tmp/starthere"
-    end = random.randint(6, 9)
+    end = random.randint(2, 4)
     for x in range(0, end):
         # Set up fake dirs
         if x != end:
