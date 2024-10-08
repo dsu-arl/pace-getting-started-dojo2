@@ -9,3 +9,6 @@ challenges:
   - id: movingfiles
     name: Move, copy, and rename files.
     allow_privileged: false
+  - id: cattingfiles
+    name: Display file contents in the terminal.
+    allow_privileged: false
