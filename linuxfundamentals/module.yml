@@ -12,3 +12,6 @@ challenges:
   - id: cattingfiles
     name: Display file contents in the terminal.
     allow_privileged: false
+  - id: findingfiles
+    name: Locate files on the linux filesystem.
+    allow_privileged: false
