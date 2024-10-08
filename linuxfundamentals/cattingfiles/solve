@@ -1,5 +1,5 @@
 #!/opt/pwn.college/python
-import stats
+import stat
 import random
 from os import chmod
 from os.path import exists
