@@ -1,5 +1,5 @@
 #!/opt/pwn.college/python
-from os import makedirs, listdir, chown
+from os import makedirs, listdir, chmod
 from os.path import exists, join
 
 def main():
@@ -8,7 +8,7 @@ def main():
     chall1_dir = "/tmp/starthere/"
     if not exists(chall1_dir):
         makedirs(chall1_dir)
-        chown(chall1_dir, 1000, 1000)
+        chmod(chall1_dir, '0o777')
 
     if not check_one(chall1_dir):
         print("""
@@ -33,11 +33,11 @@ def main():
     chall2_dir = "/tmp/lorum/"
     if not exists(chall2_dir):
         makedirs(chall2_dir)
-        chown(chall2_dir, 1000, 1000)
+        chmod(chall2_dir, '0o777')
         with open(join(chall2_dir, 'ipsum.txt'), 'w') as fObj:
             fObj.write("Delete me!")
         
-        chown(join(chall2_dir, 'ipsum.txt'), 1000, 1000)
+        chmod(join(chall2_dir, 'ipsump.txt'), '0o777')
 
     if not check_two(chall2_dir):
         print("""
