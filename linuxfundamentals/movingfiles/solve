@@ -10,7 +10,6 @@ def main():
         if not exists(d):
             makedirs(d)
             chmod(d, stat.S_IRWXU | stat.S_IRWXG)
-    chmod('/tmp/starthere', stat.S_IRWXU | stat.S_IRWXG)
     if not exists('/tmp/backups'):
         makedirs('/tmp/backups')
         chmod('/tmp/backups', stat.S_IRWXU | stat.S_IRWXG)
@@ -25,10 +24,11 @@ def main():
         chmod('/tmp/starthere/apple.txt', stat.S_IRWXU | stat.S_IRWXG)
         chmod('/tmp/starthere/celery.txt', stat.S_IRWXU | stat.S_IRWXG)
         chmod('/tmp/starthere/gummy_worms.txt', stat.S_IRWXU | stat.S_IRWXG)
+        chmod('/tmp/starthere', stat.S_IRWXU | stat.S_IRWXG)
 
 
+    check_one(challenge_one_dirs)
     if not exists('/tmp/.chall_one'):
-        check_one(challenge_one_dirs)
         print("""
         In this challenge you are going to learn how to move
         already existing files! While we will be only moving
@@ -55,8 +55,8 @@ def main():
         return
 
 
+    check_two()
     if not exists('/tmp/.chall_two'):
-        check_two()
         print("""
         Maybe you don't like gummy worms! For this next challenge,
         you will navigate to '/tmp/starthere/candy' and rename 
@@ -75,8 +75,8 @@ def main():
         """)
         return
 
+    check_three()
     if not exists('/tmp/.chall_three'):
-        check_three()
         print("""
         What if I want to have multiple copies of files? Well, we
         can do that!
@@ -136,7 +136,7 @@ def check_two() -> bool:
 def check_three() -> bool:
     # Copy File
     if exists('/tmp/backups/apple.txt') and exists('/tmp/starthere/fruit/apple.txt'):
-        with open('/tmp/.chall_three') as fObj:
+        with open('/tmp/.chall_three', 'w') as fObj:
             fObj.write('complete')
         chmod('/tmp/.chall_three', stat.S_IRWXU | stat.S_IRWXG)
         print("Congratulations! You did it!")
