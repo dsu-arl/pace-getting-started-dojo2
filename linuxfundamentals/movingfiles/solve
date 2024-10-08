@@ -124,7 +124,7 @@ def check_one(dirs) -> bool:
 def check_two() -> bool:
     # Rename
     dir_content = listdir('/tmp/starthere/candy')
-    if 'gummy_worms.txt' in dir_content and len(listdir('/tmp/starthere/candy')) != 1:
+    if 'gummy_worms.txt' in dir_content:
         return False
 
     with open('/tmp/.chall_two', 'w') as fObj:
