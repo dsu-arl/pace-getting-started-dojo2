@@ -75,15 +75,19 @@ def main():
             directory. 
 
             From here your goal is to look around the different directories
-            within the start here directory to find a file. That file will
+            within the starthere directory to find a file. That file will
             have a name that looks like this 'pwn_{random_word}_{random_word}_pwn.
 
             If you find yourself in a directory that is empty, type 'cd ..' to 
-            go back one directory and change your course!
+            go back one directory and change your course! 
 
             Then you can type '/challenge/solve' and enter the filename when 
             prompted to get your flag!
 
+            Note: Type 'cd' without a directory name to return to your home 
+            directory. You can also use the '/' tolink together directory 
+            names, for example, "cd /tmp/starthere/...".
+            
             Good luck!
 
         """)

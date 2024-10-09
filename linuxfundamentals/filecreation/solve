@@ -20,15 +20,16 @@ def main():
 
         To create a file, you just run the command
         'touch {filename}' where filename is whatever
-        you want to name it.
+        you want to name it. This creates an empty file
+        with no contents in it.
 
         To pass this first part you must navigate to
         the '/tmp/starthere/' directory and then
         create a file in that directory with whatever
         name you want to give it.
 
-        After that, come back here and run solve to move
-        on!
+        After that, run '/challenge/solve' again to 
+        move on!
                 """)
         return 0
     chall2_dir = "/tmp/lorum/"
@@ -49,11 +50,11 @@ def main():
         file 'ipsum.txt'. 
 
         'rm' stands for remove... so it's easy
-        to remember!
+        to remember! Usage: 'rm {filename}'.
 
-        Once you have deleted the file, run this
-        solve file one last time to get your
-        flag!
+        Once you have deleted the file, run
+        '/challenge/solve' one last time to 
+        get your flag!
         """)
         return 0
 
