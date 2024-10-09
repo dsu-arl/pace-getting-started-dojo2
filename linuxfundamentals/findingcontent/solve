@@ -111,12 +111,15 @@ def main():
 
             'grep {string_to_search_for} {file_to_look_in}'
 
+        grep will display the entire line of text, where
+        the input string is found.
+
         For this challenge I want you to try and find a 
         password within the file '/tmp/one/data.txt'.
 
         The password resides in the file and looks like
         this:
-            'Password: supersecretpassword'
+            'Password: {supersecretpassword}'
 
         Once you are done, copy the password, run 
         '/challenge/solve', and then paste in the password
