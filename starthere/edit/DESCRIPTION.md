@@ -11,7 +11,7 @@ You will also see some system files (`.bashrc`, `.profile`, etc.) - these files 
 
 When you see a file you want to re-open, click on that file name to open it in VSCode. After editing a file, `CTRL+S` will save your changes.
 
-In this challenge, your task is to re-open `myfile.txt` and edit the contents of the file so it contains the phrase "Hello World!".
+In this challenge, your task is to re-open `myfile.txt` and edit the contents of the file so it contains the phrase "Hello World!". (Make sure to save it!)
 
 Once you have updated this file, open a terminal and run `/challenge/solve` to verify your solution and receive your flag!
 
