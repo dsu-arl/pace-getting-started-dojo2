@@ -13,5 +13,8 @@ challenges:
     name: Display file contents in the terminal.
     allow_privileged: false
   - id: findingfiles
-    name: Locate files on the linux filesystem.
+    name: Locate files on the Linux filesystem.
+    allow_privileged: false
+  - id: findingcontent
+    name: Locate strings within files on Linux.
     allow_privileged: false
