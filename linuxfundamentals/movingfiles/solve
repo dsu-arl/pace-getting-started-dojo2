@@ -39,9 +39,9 @@ def main():
         short for 'move'. To use this command you will follow
         this formula: 'mv {file_to_move} {destination}'.
 
-        As an example, say we have a file named we want to move
-        called 'credit_card_info.txt' into a directory called
-        'secret', we would run this command
+        As an example, say we have a file named 
+        'credit_card_info.txt' that we want to move into a 
+        directory called 'secret'. We would run this command:
 
             'mv credit_card_info.txt secret/'
 
