@@ -6,3 +6,4 @@ award:
 modules:
   - id: starthere
   - id: linuxfundamentals
+  - id: linuxadmin
