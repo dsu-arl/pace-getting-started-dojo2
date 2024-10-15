@@ -1,0 +1,5 @@
+name: Linux Administration
+challenges:
+  - id: processes
+    name: Interact with processes
+    allow_privileged: false
