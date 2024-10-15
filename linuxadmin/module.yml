@@ -1,4 +1,4 @@
-name: Linux Administration
+name: Linux Admin
 challenges:
   - id: processes
     name: Interact with processes
