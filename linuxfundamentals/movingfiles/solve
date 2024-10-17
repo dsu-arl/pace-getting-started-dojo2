@@ -13,7 +13,7 @@ def main():
     if not exists('/tmp/backups'):
         makedirs('/tmp/backups')
         chmod('/tmp/backups', stat.S_IRWXU | stat.S_IRWXG)
-    if len(listdir('/tmp/starthere')) == 3:
+    if len(listdir('/tmp/starthere')) == 3 and len(listdir('/tmp/starthere/fruit')) != 1: # Rough fix so .txt files aren't recreated
         with open('/tmp/starthere/apple.txt', 'w') as fObj:
             fObj.write("I'm a fruit!")
         with open('/tmp/starthere/celery.txt', 'w') as fObj:
