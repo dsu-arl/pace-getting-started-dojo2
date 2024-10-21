@@ -1,0 +1,40 @@
+#!/opt/pwn.college/python
+from os.path import exists
+import subprocess
+
+def print_instructions():
+    print("""
+    You've just received an email from a co-worker named
+    William Kiffin asking you for help with his account!
+
+        Dear System Administrator,
+
+        I was trying to logon to my account on the computer,
+        but I have forgotten my password! I was wondering if
+        you could give me a temporary password, so that I can
+        logon to my account!
+
+        Sincerely,
+        William Kiffin
+
+        P.S. My account name is 'wkiffin', please set my temporary
+        password to 'Password1!'
+
+    Use the 'passwd' command to change 'wkiffin's password!
+
+        'passwd {useraccount} {newpassword}'
+
+    """)
+
+def setup():
+    # Create user 'wkiffin' with Password
+    pass
+
+def check():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
