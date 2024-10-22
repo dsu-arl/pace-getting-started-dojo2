@@ -2,6 +2,7 @@ name: Linux Admin
 challenges:
   - id: processes
     name: Interact with processes
+    allow_privileged: false
   - id: userpasswords
     name: Change a user's password
     allow_privileged: true
