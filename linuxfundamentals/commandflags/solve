@@ -74,8 +74,8 @@ def main():
                 fObj.write('check')
         else:
             print("Oops! That's not correct!")
+            return
         
-        return
 
     with open('/flag', 'r') as fObj:
         print(fObj.read())
