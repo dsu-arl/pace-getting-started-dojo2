@@ -1,0 +1,90 @@
+#!/opt/pwn.college/python
+# In this challenge we will learn mkdir(), rmdir(), and ls -a for hidden files
+from os.path import join
+from os import listdir
+
+user_home = "/home/hacker"
+
+def mkdir_check():
+    if 'ostrich_research' in listdir('/home/hacker'):
+        return True
+    return False
+
+def mkdir_instructions():
+    print("""
+    We all have a lot of documents on our computers.
+    They are filled with a lot of ideas that span
+    across many different topics. It helps to keep
+    them organized!
+
+    One of the best ways to do that is by creating
+    a new directory (folder) for them!
+
+    You're a fun person, and you have an interest
+    in ostriches! You want to keep all of your
+    writing and research about ostriches in one
+    place so it's easy to find!
+
+    For this challenge, first, make sure you're in
+    your home directory by typing 'pwd' and making
+    sure the output says:
+
+        /home/hacker
+
+        * If it doesn't, then type 'cd /home/hacker'
+          to change to your home directory!
+
+    Now that you're home, make a directory called 
+    'ostrich_research' using the 'mkdir' command
+    to store all of your documents on ostriches!
+
+        'mkdir {name_of_directory}'
+
+    """)
+
+def rmdir_check():
+
+    if 'old_stuff' not in listdir('/home/hacker'):
+        return True
+    return False
+
+def rmdir_instructions():
+    print("""
+    Great job!
+
+    Now that you know how to make a new directory
+    we should show you how to delete a directory!
+    
+    In your home directory there exists a directory
+    called 'old_stuff'. It's full of a bunch of 
+    old files you want to get rid of. If you want
+    you can read through them using the 'cat'
+    command a take a trip down memory lane!
+
+    Once you're ready to delete the directory, you'll
+    want to use the 'rmdir' command to do so! It's
+    easy to remember!
+
+        'rmdir {name_of_directory}'
+
+    You may run into complications, are you able to
+    solve the problem and get past it? 
+
+    """)
+
+def main():
+
+    if not mkdir_check():
+        mkdir_instructions()
+        return
+
+    if not rmdir_check():
+        rmdir_instructions()
+        return
+
+    with open('/flag', 'r') as fObj:
+        print(fObj.read())
+
+if __name__ == "__main__":
+    main()
+
