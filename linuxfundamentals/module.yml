@@ -21,3 +21,6 @@ challenges:
   - id: advanceddirectories
     name: Advanced Directory Techniques.
     allow_privileged: false
+  - id: commandflags
+    name: Learn about command flags.
+    allow_privileged: false
