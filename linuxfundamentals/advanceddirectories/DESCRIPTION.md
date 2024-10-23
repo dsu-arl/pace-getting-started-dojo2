@@ -1,1 +1,1 @@
-In this challenge you will be learning how to traverse the Linux filesystem with the `cd` command, as well as listing directory content with `ls`. You can start the VSCode workspace, open a terminal, and run `/challenge/solve` to get your instructions.
+In this challenge you will learn how to create and remove directories, as well as view hidden files! You can start the VSCode workspace, open a terminal, and run `/challenge/solve` to get your instructions.
