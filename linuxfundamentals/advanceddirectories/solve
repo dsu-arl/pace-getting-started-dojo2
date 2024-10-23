@@ -72,6 +72,46 @@ def rmdir_instructions():
 
     """)
 
+def ls_check():
+    ans = input("Please supply the hidden phrase: ")
+    if ans.strip() == "GorillaSnacksPackageHammer":
+        return True
+    return False
+
+def ls_instructions():
+    print("""
+    Awesome!
+
+    I want to show you one last thing with directories!
+
+    In the first challenge you learned about 'ls' and
+    how to view the contents of directories. Well, what
+    if there was a way to view files that were hidden?
+
+    There is! You just have to pass a flag to the 'ls'
+    command to tell it you want to view hidden files.
+
+    Hidden files are files that have a dot (.) in front
+    of their name. This means they wont show up if you just 
+    type 'ls'.
+
+    However, if we pass the 'a' flag to ls, we can view
+    hidden files! To do this we have to run ls as follows:
+
+        'ls -a' 
+
+        * Notice the dash (-) in the command. A dash
+          is required to denote that 'a' is a flag
+          for ls.
+
+    In your home directory find a hidden password file,
+    'cat' the file, and copy it's contents. 
+
+    You will then run '/challenge/solve' and supply the
+    password!
+
+    """)
+
 def main():
 
     if not mkdir_check():
@@ -82,6 +122,7 @@ def main():
         rmdir_instructions()
         return
 
+    print("Congratulations!")
     with open('/flag', 'r') as fObj:
         print(fObj.read())
 

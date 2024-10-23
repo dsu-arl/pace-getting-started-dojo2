@@ -25,4 +25,8 @@ Bernard Carburetor IV.
 EOT
 echo "The carrots in the fridge have gone bad." > /home/hacker/old_stuff/old_note.txt
 
+echo "GorillaSnacksPackageHammer" > /home/hacker/.hidden_password_file.txt
+
+chown -R hacker:hacker /home/hacker/.hidden_password_file.txt
 chown -R hacker:hacker /home/hacker/old_stuff
+
