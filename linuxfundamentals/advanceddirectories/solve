@@ -122,6 +122,10 @@ def main():
         rmdir_instructions()
         return
 
+    if not ls_check():
+        ls_instructions()
+        return
+
     print("Congratulations!")
     with open('/flag', 'r') as fObj:
         print(fObj.read())
