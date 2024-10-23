@@ -24,3 +24,5 @@ In love,
 Bernard Carburetor IV.
 EOT
 echo "The carrots in the fridge have gone bad." > /home/hacker/old_stuff/old_note.txt
+
+chown -R hacker:hacker /home/hacker/old_stuff
