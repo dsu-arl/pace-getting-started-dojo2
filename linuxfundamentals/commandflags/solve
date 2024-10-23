@@ -45,7 +45,7 @@ def main():
     # Ask for kernel-name
     if not exists('/tmp/.check_two'):
         ans = input("What is the kernel name of this device? ")
-        if ans == subprocess.run('uname -s', shell=True, text=True, capture_output=True):
+        if ans == subprocess.run('uname -s', shell=True, text=True, capture_output=True).stdout.strip():
             with open('/tmp/.check_two', 'w') as fObj:
                 fObj.write('check')
             print("Using 'uname', what is the kernel release of this device?")
@@ -57,7 +57,7 @@ def main():
     # Ask for kernel-release
     if not exists('/tmp/.check_three'):
         ans = input("What is the kernel release of this device? ")
-        if ans == subprocess.run('uname -r', shell=True, text=True, capture_output=True):
+        if ans == subprocess.run('uname -r', shell=True, text=True, capture_output=True).stdout.strip():
             with open('/tmp/.check_three', 'w') as fObj:
                 fObj.write('check')
             print("Using 'uname', what is the machine type of this device?")
@@ -69,7 +69,7 @@ def main():
     # Ask for machine
     if not exists('/tmp/.check_four'):
         ans = input("What is the machine type of this device? ")
-        if ans == subprocess.run('uname -m', shell=True, text=True, capture_output=True):
+        if ans == subprocess.run('uname -m', shell=True, text=True, capture_output=True).stdout.strip():
             with open('/tmp/.check_four', 'w') as fObj:
                 fObj.write('check')
         else:
