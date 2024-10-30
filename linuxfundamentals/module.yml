@@ -24,3 +24,6 @@ challenges:
   - id: commandflags
     name: Learn about command flags.
     allow_privileged: false
+  - id: nanocreatefile
+    name: Create files with nano.
+    allow_privileged: false
