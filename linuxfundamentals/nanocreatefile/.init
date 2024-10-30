@@ -1,1 +1,2 @@
-mkdir -p /challenge/bin && ln -sf /bin/nano /challenge/bin
+mkdir -p /challenge/bin && ln -sf /usr/bin/nano /challenge/bin
+
