@@ -25,6 +25,7 @@ def main():
             if 'nano' in x.strip():
                 with open('/flag', 'r') as fObj2:
                     print(fObj2.read())
+                    exit(0)
 
     print("It looks like you didn't use nano to do this challenge. Please use 'nano'.")
 
