@@ -1,3 +1,2 @@
 mkdir -p /challenge/bin && ln -sf /bin/nano /challenge/bin
-su - hacker -c "history -c"
-
+echo "" > /home/hacker/.bash_history
