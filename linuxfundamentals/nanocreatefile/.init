@@ -1,3 +1,3 @@
 mkdir -p /challenge/bin && ln -sf /bin/nano /challenge/bin
-history -c
+su - hacker -c "history -c"
 
