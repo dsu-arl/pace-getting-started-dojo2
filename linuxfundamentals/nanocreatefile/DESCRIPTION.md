@@ -10,6 +10,6 @@ In nano, they provide you with all of the keyboard shortcuts you will need to us
 
 Here is an image of what the `nano` interface looks like!
 
-![Image of nano interface](https://github.com/dsu-arl/pace-getting-started-dojo2/blob/main/linuxfundamentals/nanocreatefile/nano_screenshot.png)
+![Image of nano interface](nano_screenshot.png)
 
 To complete this challenge you use nano to create a file named `my_nano_file.txt` in your home directory (you should be there by default). This file should contain the phrase "When one does not love too much, one does not love enough." When you have put the text in nano, save it and exit, then run `/challenge/solve`.
