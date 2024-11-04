@@ -22,7 +22,7 @@ def main():
 
     with open(HISTORY, 'r') as fObj:
         for x in fObj.readlines():
-            if 'nano' in x.strip():
+            if 'nano' in x.split(' ')[0].strip():
                 with open('/flag', 'r') as fObj2:
                     print(fObj2.read())
                     exit(0)
