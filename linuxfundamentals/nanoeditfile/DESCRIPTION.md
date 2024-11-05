@@ -1,4 +1,6 @@
-In this challenge you will edit your already existing file with `nano`.
+In the previous challenge you saw how to create a file with nano. 
+In this challenge you will see how to edit an existing file. 
+*Spoiler Alert: It's easy!*
 
 To complete this challenge:
 1. Open `my_nano_file.txt` with nano by typing `nano my_nano_file.txt`
