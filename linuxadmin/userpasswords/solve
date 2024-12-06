@@ -1,4 +1,5 @@
 #!/opt/pwn.college/python
+
 from os.path import exists
 import subprocess
 
@@ -26,15 +27,22 @@ def print_instructions():
 
     """)
 
-def setup():
-    # Create user 'wkiffin' with Password
-    pass
-
-def check():
-    pass
-
 def main():
-    pass
+    success_path = "/tmp/.challenge_complete"
+
+    if not exists(success_path):
+        print_instructions()
+
+    if open(success_path, "r").read() != "Password1!":
+        print("It appears that wkiffin's password was not set to 'Password1!'. Please try again.")
+        print("""
+            Use the 'passwd' command to change 'wkiffin's password!
+
+                'passwd {useraccount} {newpassword}'
+      """)
+    else:
+        print(open("/flag", "r").read())
+
 
 if __name__ == "__main__":
     main()
