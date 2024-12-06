@@ -32,6 +32,7 @@ def main():
 
     if not exists(success_path):
         print_instructions()
+        exit()
 
     if open(success_path, "r").read() != "Password1!":
         print("It appears that wkiffin's password was not set to 'Password1!'. Please try again.")
