@@ -22,6 +22,8 @@ def print_instructions():
     Use the 'usermod' command to add the 'wkiffin' user to the 'docker' group!
 
           'usermod -aG docker wkiffin'
+
+    When you're done, run /challenge/solve again to get your flag!
     """)
 
 def main():
