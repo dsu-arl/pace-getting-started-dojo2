@@ -5,5 +5,8 @@ award:
   emoji: 😀
 modules:
   - id: starthere
+    name: Start Here!
   - id: linuxfundamentals
+    name: Linux Fundamentals
   - id: linuxadmin
+    name: Linux Admin
