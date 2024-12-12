@@ -1,0 +1,45 @@
+#!/opt/pwn.college/python
+import sys
+import pwd
+
+sys.path.append('/challenge')
+
+def print_instructions():
+    print("""
+    You have received another IT support email!
+
+          Dear System Administrator,
+            Origen has been labeled a heretic by the Second Council of Constantinople,
+            and therefore his user account must be deleted. Please perform this action
+            at your earliest convenience.
+
+          Sincerely,
+
+          Second Council of Constantinople
+
+    Use the 'userdel' command to delete the `origen` user account.
+
+    userdel origen
+
+    When you're finished, run /challenge/solve again to get your flag!
+    """)
+
+def print_flag():
+	try:
+		with open("/flag", "r") as f:
+			print(f.read())
+	except FileNotFoundError:
+		print("Error: Flag file not found.")
+
+def main():
+    user = "origen"
+    try:
+        pwd.getpwnam(user)
+        print_instructions()
+        exit(1)
+    except KeyError:
+        print(f"The {user} user has been deleted! Great job, here is your flag:")
+        print_flag()
+
+if __name__ == "__main__":
+    main()

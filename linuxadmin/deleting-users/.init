@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Allow hacker user to run userdel without sudo
+chmod 4755 /usr/sbin/userdel
