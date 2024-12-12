@@ -9,6 +9,8 @@ challenges:
 - id: usergroups
   name: Add a user to another group
   allow_privileged: true
+- id: deleting-users
+  name: Deleting Users
 - id: adding-users
   name: Adding Users
   allow_privileged: false
