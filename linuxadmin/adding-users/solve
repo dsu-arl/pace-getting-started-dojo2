@@ -1,0 +1,47 @@
+#!/opt/pwn.college/python
+import sys
+import pwd
+
+sys.path.append('/challenge')
+
+def print_instructions():
+    print("""
+    Looks like you've received another IT support email!
+
+          Dear System Administrator,
+
+          My name is John Bunyan, and I am new to this company. If you could create a user account for me
+          on my computer that would be great! I would prefer the username 'jbunyan'.
+
+          Sincerely,
+
+          John
+
+    Use the 'useradd' command to create a new user account for John Bunyan:
+
+          useradd -m jbunyan
+
+    The '-m' flag for the useradd command means to create a 'home' directory for that user, as in '/home/jbunyan'.
+
+    Once you've created the new user, run this program again to get your flag!
+    """)
+
+def print_flag():
+	try:
+		with open("/flag", "r") as f:
+			print(f.read())
+	except FileNotFoundError:
+		print("Error: Flag file not found.")
+
+def main():
+    user = "jbunyan"
+    try:
+        pwd.getpwnam(user)
+        print(f"The {user} user exists! Great job, here is your flag:")
+        print_flag()
+    except KeyError:
+        print_instructions()
+        exit(1)
+
+if __name__ == "__main__":
+    main()
